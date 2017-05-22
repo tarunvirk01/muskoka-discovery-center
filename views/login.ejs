@@ -1,0 +1,46 @@
+<% include ./partials/header.ejs %>
+
+<main>
+    <div class="content-wrapper">
+            <div class="container">
+                <h2 class="coloredHeader">Please Login To Enter </h2>
+
+                <hr />
+
+                <div class="row">
+                    <div class="col-md-6">
+
+
+                        <%if (messages.length > 0) {%>
+                        <div class="alert alert-danger"><%= messages %></div>
+                        <%}
+                        else {%>
+                        <div class="alert alert-info">For login use the form below </div>
+                        <% } %>
+
+                        <form method="post">
+                            <label for="username" class="col-sm-2 control-label">Email: </label>
+                            <input name="username" id="username" class="form-control"  type="email" required/>
+
+                            <label for="password" class="col-sm-2 control-label">Password: </label>
+                            <input name="password" id="password" class="form-control"  type="password" required />
+
+                            <hr />
+                            <button class="btn buttonPrime buttonPrimeHover" style="margin-bottom:50px">Login  <span class="glyphicon glyphicon-user"></span> </button>
+
+                        </form>
+                </div>
+                                </div>
+    </div>
+
+</main>
+
+
+
+
+
+
+
+
+
+<% include ./partials/footer.ejs %>

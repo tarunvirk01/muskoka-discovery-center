@@ -1,0 +1,98 @@
+<% include ../partials/header.ejs %>
+
+<main>
+
+
+<!-- subnavigation -->
+    <header>
+        <nav class="campProfileNav">
+            <ul>
+                <a href="/myclients" class="buttonPrime buttonPrimeHover buttonPrime buttonPrimeHover SubNavIsActive">Profile</a>
+                <a href="/myclients/directory" class="buttonPrime buttonPrimeHover">Sign In/Out camper</a>
+                <a href="./price" class="buttonPrime buttonPrimeHover">Payments</a>
+                <a href="https://app.box.com/representation/file_version_170876532125/image_2048_jpg/1.jpg?shared_name=jkm57t0hi6xz9f5qj5hpinr9nefw80ol" class="buttonPrime buttonPrimeHover">Register to camp</a>
+            </ul>
+        </nav>
+    </header>
+<!-- subnavigation -->
+
+
+    <section>
+        <h1>Profile</h1>
+
+        <% if (user) { %>
+            <a class="btn buttonPrime buttonPrimeHover addCamperBtn" href="/myclients/add">Add camper</a>
+        <% } %>
+
+        <div class="separatorPortfolio"></div>
+
+        <div class="profileContainer">
+            <table id="table-id" class="table table-striped table-bordered table-hover">
+                <thead>
+                <tr>
+                    <th role="columnheader">
+                        <b>Photo: </b>
+                    </th>
+                    <th role="columnheader">
+                        <b>Camper name: </b>
+                    </th>
+                    <th role="columnheader">
+                        <b>Parent Names: </b>
+                    </th>
+                    <th role="columnheader">
+                        <b>Email: </b>
+                    </th>
+                    <th role="columnheader">
+                        <b>Phone: </b>
+                    </th>
+                    <th role="columnheader">
+                        <b>Notes: </b>
+                    </th>
+                    <th role="columnheader">
+                        <b>Medical Notes: </b>
+                    </th>
+                    <th role="columnheader">
+                        <b>Parent code: </b>
+                    </th>
+                    <% if (user) { %>
+                    <th role="columnheader"><b>Manage: </b></th>
+                    <% } %>
+                </tr>
+                </thead>
+
+<!-- place for "for loop" -->
+                
+            <% for (var i=0; i < lists.length; i++) { %>
+                <tr class="tableRow">
+                    <td>
+                        <img src="https://cdn.pixabay.com/photo/2015/06/12/21/58/child-807547_960_720.jpg" alt="<%= lists[i].campername %> photo" class="camperPhoto flex-item">
+                    </td>
+                    <td><%= lists[i].campername %></td>
+                    <td><%= lists[i].parentname %></td>
+                    <td><%= lists[i].email %></td>
+                    <td><%= lists[i].phone %></td>
+                    <td><%= lists[i].notes %></td>
+                    <td><%= lists[i].medical %></td>
+                    <td><%= lists[i].code %></td>
+
+                    <% if (user) { %>
+                    <td>
+                        <a href="/myclients/<%= lists[i]._id %>" class="buttonPrime buttonPrimeHover btn">Edit</a>
+                        </br>
+                        </br>
+                        <a href="/myclients/delete/<%= lists[i]._id %>" class="buttonDanger buttonDangerHover btn">Delete</a>
+                    </td>
+                    <% }%>
+                </tr>
+            <% }%>
+            
+
+            </table>
+        </div> <!-- class="profileContainer" -->
+
+        <div class="separatorPortfolio"></div>
+    </section>
+
+</main>
+
+<% include ../partials/footer.ejs %>

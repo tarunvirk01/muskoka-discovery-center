@@ -1,0 +1,40 @@
+<% include ../partials/header.ejs %>
+
+<h1> Parents/Camper Managing Page</h1>
+<% if (user) { %>
+<a href="/price/add">Add camper payment info </a>
+<% } %>
+<table id="table-id" class="table table-striped table-bordered table-hover">
+    <thead>
+    <tr>
+        <th role="columnheader">Camper's Name</th>
+        <th role="columnheader">Detials</th>
+        <th role="columnheader">Price</th>
+        <% if (user) { %> <th>Manage</th> <% } %>
+    </tr>
+    </thead>
+
+<% for (var i=0; i < price.length; i++) { %>
+
+   <tr>
+
+       <td class="success"><%= price[i].cname %></td>
+
+       <td><%= price[i].details %></td>
+       <td><%= price[i].price %></td>
+       
+
+       <% if (user) { %>
+       <td>
+           <a href="/price/<%= price[i]._id %>" class="btn btn-info">Edit</a>
+           <a href="/price/delete/<%= price[i]._id %>" class="btn btn-info confirmation">Delete</a>
+
+       </td>
+       <% }%>
+   </tr>
+
+
+   <% }%>
+</table>
+
+<% include ../partials/footer.ejs %>

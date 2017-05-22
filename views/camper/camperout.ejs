@@ -1,0 +1,24 @@
+<% include ../partials/header.ejs %>
+
+<main class="camperMain">
+   <section>
+       <h1 class="coloredHeader">Camper Sign Out</h1>
+       <form method="post">
+           <div class="form-group">
+               <input type="hidden" name="process" id="process" value="Sign Out"/>
+           </div>
+           <div class="form-group">
+               <label for="camper" class="col-sm-3 control-label formLabelInput">Camper Name: </label>
+               <input name="camper" id="camper"  required/>
+           </div>
+           <div class="form-group">
+               <label for="code" class="col-sm-3 control-label formLabelInput">Parent Code: </label>
+               <input name="code" id="code" required />
+           </div>
+           <button class="buttonPrime buttonPrimeHover btn">Sign Out</button>
+       </form>
+   </section>
+
+</main>
+
+<% include ../partials/footer.ejs %>

@@ -1,0 +1,52 @@
+<% include ../partials/header.ejs %>
+
+
+<main class="container">
+
+
+   <h2 class="page-head-line">Edit Clients/Projects</h2>
+
+           <form method="post">
+               <div class="form-group">
+                   <label for="parentname" class="col-sm-2 control-label">Full Name: </label>
+                   <input name="parentname" id="parentname" required value="<%= list.parentname %>" />
+               </div>
+
+               <div class="form-group">
+                   <label for="phone" class="col-sm-2 control-label">Phone: </label>
+                   <input name="phone" id="phone" type="number" required value="<%= list.phone %>" />
+               </div>
+               <div class="form-group">
+                   <label for="email" class="col-sm-2 control-label">Email: </label>
+                   <input name="email" id="email" type="email" required value="<%= list.email %>" />
+               </div>
+               <div class="form-group">
+                   <label for="campername" class="col-sm-2 control-label">Camper Name: </label>
+                   <input name="campername" id="campername" required  value="<%= list.campername %>" />
+               </div>
+               <div class="form-group">
+                   <label for="notes" class="col-sm-2 control-label">Notes: </label>
+                   <input name="notes" id="notes" required max="100" value="<%= list.notes %>" />
+               </div>
+               <div class="form-group">
+                   <label for="medical" class="col-sm-2 control-label">Medical: </label>
+                   <input name="medical" id="medical" required max="100" value="<%= list.medical %>" />
+               </div>
+               <div class="form-group">
+                   <label for="code" class="col-sm-2 control-label">Code </label>
+                   <input name="code" id="code"  type="number" min="0000" max="9999" value="<%= list.code %>" />
+               </div>
+               <button class="btn btn-success col-sm-offset-2">Save</button>
+
+
+           </form>
+</main>
+
+
+
+
+
+
+
+
+<% include ../partials/footer.ejs %>

@@ -1,0 +1,31 @@
+<% include ../partials/header.ejs %>
+<header>
+    <nav class="campProfileNav">
+        <ul>
+            <a href="/myclients" class="buttonPrime buttonPrimeHover">Profile</a>
+            <a href="/price" class="buttonPrime buttonPrimeHover">Payments</a>
+            <a href="myclients/campReg" class="buttonPrime buttonPrimeHover">Register to camp</a>
+        </ul>
+    </nav>
+</header>
+<h1>Sign In/Out Directory</h1>
+<table id="table-id" class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+    <thead>
+    <tr>
+        <th role="columnheader">Camper Name</th>
+        <th role="columnheader">Code</th>
+        <th role="columnheader">Time</th>
+    </tr>
+    </thead>
+
+
+    <% for (var i=0; i < signs.length; i++) { %>
+    <tr>
+        <td><%= signs[i].camper %></td>
+        <td><%= signs[i].code %></td>
+        <td><%= signs[i].created_at %></td>
+    </tr>
+
+    <% }%>
+</table>
+<% include ../partials/footer.ejs %>

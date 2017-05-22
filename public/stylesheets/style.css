@@ -1,0 +1,560 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto); /* FREE GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    height: 100%;
+}
+
+main {
+    width: 70%;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    margin: auto auto;
+
+    min-height: 82%;
+    height: auto !important;
+    height: 85%;
+    margin: 0 auto -142px;
+}
+
+.mylist{
+  float: none;
+  width: 100%;
+
+}
+.set-radius-zero {
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+.content-wrapper {
+    margin-top: 40px;
+    min-height: 600px;
+    padding-bottom: 60px;
+}
+
+.page-head-line {
+    font-weight: 900;
+    padding-bottom: 20px;
+    /*border-bottom: 2px solid #F0677C;*/
+    text-transform: uppercase;
+    /*color: #F0677C;*/
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+}
+
+.progress {
+    height: 8px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+}
+.login-icon {
+    height: 60px;
+    width: 60px;
+    padding: 13px;
+    border-radius: 50%;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #1e1e1e;
+    text-align: center;
+    cursor:pointer;
+    /*background-color:#F0677C;*/
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+}
+
+
+
+/* USER SETTINGS DIV */
+.user-settings-wrapper .nav > li > a {
+    position: relative;
+    display: block;
+    padding: 15px 18px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background-color: #F0677C;
+    color: #fff;
+}
+
+.user-settings-wrapper {
+    margin-top: 10px;
+}
+
+    .user-settings-wrapper li {
+        display: inline-block;
+    }
+
+    .user-settings-wrapper .dropdown-settings {
+        width: 200px;
+        padding: 10px;
+    }
+
+    .user-settings-wrapper .nav > li > a:hover,.user-settings-wrapper .nav > li > a:focus {
+        text-decoration: none;
+        background-color: #C36464!important;
+    }
+
+    .user-settings-wrapper img {
+        height: 64px;
+        width: 64px;
+        border: 1px solid #000000;
+    }
+
+    .user-settings-wrapper .dropdown-menu {
+        margin: 0px;
+        border-radius: 0px!important;
+        -moz-border-radius: 0px!important;
+        -webkit-border-radius: 0px!important;
+    }
+
+    .user-settings-wrapper .btn {
+        border-radius: 0px!important;
+        -moz-border-radius: 0px!important;
+        -webkit-border-radius: 0px!important;
+    }
+
+    .user-settings-wrapper .media-heading {
+        padding-top: 10px;
+    }
+
+
+
+
+
+
+/* =============================================================
+   HOME PAGE STYLES
+ ============================================================ */
+main.homePageMain {
+    width: 100%;
+    height: 60%;
+
+}
+
+main.homePageMain .homePageWraper {
+    max-width: 600px;
+    border: 4px solid rgb(75, 113, 153);
+    padding: 30px;
+    text-align: center;
+    background-color: RGBA(255,255,255, 0.8);
+    margin-top: 40px;
+}
+
+main.homePageMain .homePageWraper .homeSection {
+    display: inline-block;
+}
+
+main.homePageMain .homePageWraper .homeSection h3 {
+    color: #285796;
+    padding: 0 15px;
+    width: 80%;
+    margin: 70px auto;
+    text-align: center;
+}
+
+main.homePageMain .homePageWraper .homeSection a {
+    padding: 10px 10px;
+    margin: 0 30px 100px 30px;
+}
+
+
+.landing {
+    height: 60%;
+}
+
+
+/* ============================================================ */
+
+
+
+
+/* =============================================================
+   HEADER SECTION STYLES
+ ============================================================ */
+
+header .mainNav > * {
+    width: 100%;
+}
+
+header .mainNav div[class="preHeader flexBox"] {
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+}
+
+
+
+header .mainNav div[class="preHeader flexBox"] > * {
+    align-self: center;
+    color: rgb(40, 87, 150);
+    padding: 10px;
+    text-decoration: underline;
+}
+
+header .mainNav div[class="preHeader flexBox"] a img {
+    height: 100px;
+}
+
+header .mainNav div[class="preHeader flexBox"] > :hover {
+    color: rgb(75, 113, 153);
+    text-decoration: none;
+}
+
+header .mainNav div[class="navHeader flexBox"] {
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(33, 93, 141);
+    height: 50px;
+    padding: 0px;
+}
+
+
+header .mainNav div[class="navHeader flexBox"] > * {
+    min-width: 200px;
+    max-width: 200px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(250, 250, 250);
+    padding: 10px 15px;
+    border-left: 1px solid rgb(250, 250, 250);
+    border-right: 1px solid rgb(250, 250, 250);
+}
+
+header .mainNav div[class="navHeader flexBox"] > :hover {
+    border-bottom: 4px solid rgb(188, 51, 51);
+    text-decoration: none;
+}
+
+.active {
+    border-bottom: 4px solid rgb(188, 51, 51);
+    text-decoration: none;
+}
+
+/* =============================================================
+   FOOTER SECTION STYLES
+ ============================================================ */
+footer {
+    color: rgb(255, 255, 255);
+    background-color: rgb(75, 113, 153);
+    /*position: relative;
+    bottom: -100px;*/
+    height: 120px;
+    padding: 8px;
+    margin: 0px !important;
+    border-radius: 0;
+}
+
+
+footer .container .footerFlexBox {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: no-wrap;
+    align-items: center;
+}
+footer .container .footerFlexBox h2 {
+    margin-bottom: 20px;
+}
+
+footer .container div[class="footerFlex flexBox"]  {
+    justify-content: space-around;
+}
+
+footer .container div[class="footerFlex flexBox"] > * {
+    padding: 5px 15px;
+}
+
+/*==============================================
+    DASHBOARD  STYLES
+ =============================================*/
+
+/* DASHBOARD ICONS */
+
+.bk-clr-one {
+    background-color: #B9B739;
+}
+
+.bk-clr-two {
+    background-color: #F94C4C;
+}
+
+.bk-clr-three {
+    background-color: #119c7e;
+}
+
+.bk-clr-four {
+    background-color: #b739b9;
+}
+
+.dashboard-div-icon {
+    height: 75px;
+    width: 75px;
+    border: 2px solid #fff;
+    padding: 20px;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.dashboard-div-wrapper {
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+    .dashboard-div-wrapper .progress {
+        height: 2px;
+    }
+
+/* NOTICE BOARD */
+
+
+.notice-board .panel {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+}
+
+.notice-board ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+.notice-board li {
+    padding: 10px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+    .notice-board li span {
+        margin-right: 10px;
+        border: 1px solid #DBDBDB;
+        padding: 5px;
+    }
+
+    .notice-board li a, li a:hover {
+        text-decoration: none;
+        color: #000;
+    }
+
+/* SOCIAL BUTTONS */
+.btn-social {
+    color: white;
+    opacity: 0.8;
+}
+
+    .btn-social:hover {
+        color: white;
+        opacity: 1;
+        text-decoration: none;
+    }
+
+.btn-facebook {
+    background-color: #3b5998;
+}
+
+.btn-twitter {
+    background-color: #00aced;
+}
+
+.btn-linkedin {
+    background-color: #0e76a8;
+}
+
+.btn-google {
+    background-color: #c32f10;
+}
+
+
+/* ================================================================ */
+/*  CAMPER PROFILES PAGE ========================================== */
+/* ================================================================ */
+
+colors {
+    --backBlue: #215d8d;
+    --red: #bc3333;
+    --grey: #d2d2d2;
+    --textBlue: #285796;
+    --textWhite: #fafafa;
+}
+
+
+/* ----------------------------------------------  SUB NAVIGATION  */
+.campProfileNav {
+    text-align: left;
+    padding: 0 0 2px 0;
+
+    border-bottom: 1px solid grey;
+}
+
+.campProfileNav a {
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px 10px 0 0;
+    display: inline-block;
+    list-style: none;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=0, Color=#616161)";/*IE 8*/
+    -moz-box-shadow: 0 5px 8px 6px rgba(97,97,97,0.3) inset;/*FF 3.5+*/
+    -webkit-box-shadow: 0 5px 8px 6px rgba(97,97,97,0.3) inset;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: 0 5px 8px 6px rgba(97,97,97,0.3) inset;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color=#616161); /*IE 5.5-7*/
+
+}
+
+.campProfileNav ul {
+    list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+.addCamperBtn {
+    margin: 15px 0;
+}
+
+.SubNavIsActive {
+    background-color: rgb(188, 51, 51) !important;
+    color: rgb(230, 230, 230) !important;
+    text-decoration: none !important;
+}
+
+/* ----------------------------------------------  SUB NAVIGATION  */
+
+
+/*  Profiles ========================================== */
+.profileContainer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  margin: 15px 0;
+
+  justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.profileContainer .flex-item {
+    padding: 0 25px 0 0;
+}
+
+.profileContainer img {
+    height: 120px;
+}
+
+.separatorPortfolio {
+    display: block;
+    padding: 5px 0;
+    background-color: RGB(200,200,200);
+    border-top: 4px solid #285796;
+}
+
+.separatorPortfolio:last-of-type {
+    margin-bottom: 200px;
+}
+
+/*  Profiles ========================================== */
+
+
+
+
+
+/* ================================================================ */
+/*  CAMPER PROFILES PAGE ========================================== */
+/* ================================================================ */
+.formLabelInput {
+    padding: 0px !important;
+    text-align: left;
+}
+
+
+/* ================================================================ */
+
+
+
+
+
+
+
+/*  BUTTONS ========================================== */
+.buttonPrime {
+    background-color: #215d8d;
+    border-radius: 7px;
+    color: #fafafa;
+    padding: 6px 12px !important;
+    min-width: 70px;
+
+    box-shadow: rgba(18, 18, 18, 0.298039) 0px 3px 2px 1px;
+}
+
+.buttonDanger {
+    background-color: #bc3333;
+    border-radius: 7px;
+    color: #fafafa;
+    padding: 6px 12px !important;
+    min-width: 70px;
+
+        box-shadow: rgba(18, 18, 18, 0.298039) 0px 3px 2px 1px;
+}
+
+.buttonPrimeHover:hover {
+    background-color: #bc3333;
+    color: RGB(230,230,230);
+    text-decoration: none;
+}
+
+.buttonDangerHover:hover {
+    background-color: #285796;
+    color: RGB(200,200,200);
+    text-decoration: none;
+}
+/*  ====================================================== */
+
+
+/*  COMMON CLASSES ========================================== */
+.tableRow {
+    margin-bottom: 5px;
+    border-bottom: 2px solid #285796;
+}
+
+.flexBox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.coloredHeader {
+    color: #285796;
+}
+.table {
+    margin-top: 20px;
+}
+
+/*  COMMON CLASSES ========================================== */
+
+
+
+
